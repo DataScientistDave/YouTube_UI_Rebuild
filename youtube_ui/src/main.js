@@ -4,7 +4,7 @@ import vuetify from "./plugins/vuetify";
 import IconBtn from "./components/general/IconBtn.vue";
 
 Vue.config.productionTip = false;
-Vue.component("icon-btn", IconBtn);
+Vue.component("IconBtn", IconBtn);
 
 new Vue({
   vuetify,
