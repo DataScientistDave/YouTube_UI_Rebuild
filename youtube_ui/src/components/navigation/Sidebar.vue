@@ -1,6 +1,12 @@
 <template>
-  <v-navigation-drawer app permanent floating>
-    <v-app-bar-nav-icon />
+  <v-navigation-drawer
+    app
+    clipped
+    floating
+    mini-variant
+    permanent
+    color="primary"
+  >
   </v-navigation-drawer>
 </template>
 
@@ -10,4 +16,8 @@
   };
 </script>
 
-<style lang="scss" scoped></style>
+<style scoped>
+  .v-navigation-drawer {
+    margin-right: 10%;
+  }
+</style>
