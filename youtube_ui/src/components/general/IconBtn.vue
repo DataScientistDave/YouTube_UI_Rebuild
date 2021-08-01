@@ -1,8 +1,8 @@
 <template>
   <v-btn v-bind="$attrs" icon>
-		<v-icon>
-    	<slot />
-		</v-icon>
+    <v-icon>
+      <slot />
+    </v-icon>
   </v-btn>
 </template>
 

@@ -2,13 +2,28 @@
   <div>
     <v-app-bar dense flat class="px-5">
       <v-app-bar-nav-icon />
-      <v-icon large class="ml-5"> mdi-youtube </v-icon>
-      <h2>YouTube</h2>
-      <v-text-field v-show="$vuetify.breakpoint.md" dense outlined label="Search" class="pt-7 ml-10" />
-      <v-btn v-show="$vuetify.breakpoint.md" depressed color="grey darken-3" class="my-1">
+      <v-img src="../../assets/YouTube.svg" max-height="100" max-width="160" />
+      <v-text-field
+        v-show="$vuetify.breakpoint.md"
+        dense
+        outlined
+        label="Search"
+        class="pt-7 ml-10"
+      />
+      <v-btn
+        v-show="$vuetify.breakpoint.md"
+        depressed
+        color="grey darken-3"
+        class="my-1"
+      >
         <v-icon text color="grey darken-1">mdi-magnify</v-icon>
       </v-btn>
-      <v-btn v-show="$vuetify.breakpoint.sm" depressed color="grey darken-3" class="my-1 ml-2">
+      <v-btn
+        v-show="$vuetify.breakpoint.sm"
+        depressed
+        color="grey darken-3"
+        class="my-1 ml-2"
+      >
         <v-icon text color="grey darken-1">mdi-magnify</v-icon>
       </v-btn>
       <IconBtn> mdi-microphone </IconBtn>
@@ -21,9 +36,7 @@
 </template>
 
 <script>
-  import IconBtn from "../general/IconBtn.vue";
   export default {
-    components: { IconBtn },
     name: "Navbar",
   };
 </script>
