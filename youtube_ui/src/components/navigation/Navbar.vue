@@ -1,7 +1,6 @@
 <template>
   <div>
-    <v-app-bar dense flat class="px-5">
-      <v-app-bar-nav-icon />
+    <v-app-bar app dense flat color="primary" class="px-2">
       <v-img src="../../assets/YouTube.svg" max-height="100" max-width="160" />
       <v-text-field
         v-show="$vuetify.breakpoint.md"
