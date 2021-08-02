@@ -9,7 +9,11 @@
   >
     <v-list-item>
       <v-list-item-content>
-        <v-app-bar-nav-icon large class="pb-2" />
+        <v-app-bar-nav-icon
+          large
+          class="mt-n1"
+          @click="$emit('input', !value)"
+        />
         <IconBtn large class="mt-4"> mdi-home </IconBtn>
         <v-list-item-subtitle class="text-center"> Home </v-list-item-subtitle>
         <IconBtn large class="mt-7"> mdi-compass </IconBtn>
@@ -31,6 +35,7 @@
 
 <script>
   export default {
+    props: { value: Boolean },
     name: "Sidebar",
   };
 </script>

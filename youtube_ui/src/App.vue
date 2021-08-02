@@ -1,7 +1,8 @@
 <template>
   <v-app>
     <Navbar />
-    <Sidebar />
+    <Sidebar v-model="showSideModal" />
+    <SidebarModal v-model="showSideModal" />
     <v-main>
       <ChipGroups />
     </v-main>
@@ -11,6 +12,7 @@
 <script>
   import Navbar from "./components/navigation/Navbar.vue";
   import Sidebar from "./components/navigation/Sidebar.vue";
+  import SidebarModal from "./components/navigation/SidebarModal.vue";
   import ChipGroups from "./components/navigation/ChipGroups.vue";
 
   export default {
@@ -19,10 +21,11 @@
       Navbar,
       Sidebar,
       ChipGroups,
+      SidebarModal,
     },
 
-    data: () => ({
-      //
-    }),
+    data() {
+      return { showSideModal: false };
+    },
   };
 </script>
