@@ -1,7 +1,6 @@
 <template>
   <v-navigation-drawer
     app
-    clipped
     floating
     mini-variant
     mini-variant-width="120"
@@ -10,6 +9,7 @@
   >
     <v-list-item>
       <v-list-item-content>
+        <v-app-bar-nav-icon large class="pb-2" />
         <IconBtn large class="mt-4"> mdi-home </IconBtn>
         <v-list-item-subtitle class="text-center"> Home </v-list-item-subtitle>
         <IconBtn large class="mt-7"> mdi-compass </IconBtn>
