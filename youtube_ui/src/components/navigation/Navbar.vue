@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-app-bar app dense flat permanent color="primary" class="pt-1">
+    <v-app-bar app dense flat color="primary" class="pt-1">
       <v-img
         src="../../assets/YouTube.svg"
         max-height="100"

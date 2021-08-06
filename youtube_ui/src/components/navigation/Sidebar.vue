@@ -8,28 +8,18 @@
     color="primary"
   >
     <v-list-item>
-      <v-list-item-content>
-        <v-app-bar-nav-icon
-          large
-          class="mt-n1"
-          @click="$emit('input', !value)"
-        />
-        <IconBtn large class="mt-4"> mdi-home </IconBtn>
-        <v-list-item-subtitle class="text-center"> Home </v-list-item-subtitle>
-        <IconBtn large class="mt-7"> mdi-compass </IconBtn>
-        <v-list-item-subtitle class="text-center mb-7">
-          Explore
-        </v-list-item-subtitle>
-        <IconBtn large> mdi-youtube-subscription </IconBtn>
-        <v-list-item-subtitle class="text-center mb-7">
-          Subscription
-        </v-list-item-subtitle>
-        <IconBtn large> mdi-plus-box-multiple </IconBtn>
-        <v-list-item-subtitle class="text-center">
-          Library
-        </v-list-item-subtitle>
-      </v-list-item-content>
+      <v-app-bar-nav-icon large class="mt-2" @click="$emit('input', !value)" />
     </v-list-item>
+    <v-list>
+      <v-list-item v-for="item in items" :key="item.title" link class="mt-5">
+        <v-list-item-content>
+          <v-icon> {{ item.icon }} </v-icon>
+          <v-list-item-subtitle class="text-center">
+            {{ item.title }}
+          </v-list-item-subtitle>
+        </v-list-item-content>
+      </v-list-item>
+    </v-list>
   </v-navigation-drawer>
 </template>
 
@@ -37,6 +27,16 @@
   export default {
     props: { value: Boolean },
     name: "Sidebar",
+    data() {
+      return {
+        items: [
+          { icon: "mdi-home", title: "Home" },
+          { icon: "mdi-compass", title: "Explore" },
+          { icon: "mdi-youtube-subscription", title: "Subscription" },
+          { icon: "mdi-plus-box-multiple", title: "Library" },
+        ],
+      };
+    },
   };
 </script>
 
