@@ -13,7 +13,7 @@
     <v-list>
       <v-list-item v-for="item in items" :key="item.title" link class="mt-5">
         <v-list-item-content>
-          <v-icon> {{ item.icon }} </v-icon>
+          <v-icon color="grey"> {{ item.icon }} </v-icon>
           <v-list-item-subtitle class="text-center">
             {{ item.title }}
           </v-list-item-subtitle>
