@@ -1,5 +1,5 @@
 <template>
-  <v-chip v-bind="$attrs">
+  <v-chip v-bind="$attrs" color="#3d3d3d">
     <slot />
   </v-chip>
 </template>

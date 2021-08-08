@@ -9,8 +9,12 @@
       />
       <v-text-field
         v-show="$vuetify.breakpoint.md"
+        flat
         dense
+        filled
         outlined
+        solo
+        background-color="secondary"
         label="Search"
         class="pt-7 ml-10"
       />
@@ -30,7 +34,7 @@
       >
         <v-icon text color="grey darken-1">mdi-magnify</v-icon>
       </v-btn>
-      <v-btn depressed fab small color="black" class="ml-2">
+      <v-btn depressed fab small color="secondary" class="ml-2">
         <v-icon> mdi-microphone </v-icon></v-btn
       >
       <IconBtn class="ml-3"> mdi-video-plus </IconBtn>
