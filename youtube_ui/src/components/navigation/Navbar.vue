@@ -11,7 +11,6 @@
         v-show="$vuetify.breakpoint.md"
         flat
         dense
-        filled
         outlined
         solo
         background-color="secondary"
@@ -40,7 +39,7 @@
       <IconBtn class="ml-3"> mdi-video-plus </IconBtn>
       <IconBtn> mdi-apps </IconBtn>
       <IconBtn> mdi-bell </IconBtn>
-      <v-avatar color="purple lighten-1" size="26" class="ml-2">N </v-avatar>
+      <v-avatar color="purple lighten-1" size="26" class="ml-2">N</v-avatar>
     </v-app-bar>
   </div>
 </template>
