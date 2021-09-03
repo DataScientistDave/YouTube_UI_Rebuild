@@ -8,7 +8,7 @@
         class="ml-n8"
       />
       <v-text-field
-        v-show="$vuetify.breakpoint.md"
+        v-show="$vuetify.breakpoint.mdAndUp"
         flat
         dense
         outlined
@@ -18,7 +18,7 @@
         class="pt-7 ml-10"
       />
       <v-btn
-        v-show="$vuetify.breakpoint.md"
+        v-show="$vuetify.breakpoint.mdAndUp"
         depressed
         color="grey darken-3"
         class="my-1"
@@ -26,7 +26,7 @@
         <v-icon text color="grey darken-1">mdi-magnify</v-icon>
       </v-btn>
       <v-btn
-        v-show="$vuetify.breakpoint.sm"
+        v-show="$vuetify.breakpoint.smAndDown"
         depressed
         color="grey darken-3"
         class="my-1 ml-2"
