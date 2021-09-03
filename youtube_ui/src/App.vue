@@ -7,14 +7,14 @@
       <ChipGroups />
       <v-sheet color="secondary">
         <v-row class="my-1 ml-6">
-          <v-col v-for="(video, i) in videos" :key="video.creator" cols="4">
+          <v-col v-for="(video, i) in videos" :key="video.title" cols="4">
             <v-img
               :src="`https://source.unsplash.com/random/300x20${i}`"
               max-height="200"
               max-width="300"
             />
             <div class="pa-2">
-              <div class="d-flex">
+              <div class="d-flex mr-9">
                 <v-avatar size="38">
                   <v-img
                     :src="`https://source.unsplash.com/random/200x10${i}`"

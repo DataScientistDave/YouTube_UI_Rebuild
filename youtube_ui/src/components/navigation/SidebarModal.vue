@@ -45,7 +45,7 @@
         <v-list-item-title class="ml-8"> {{ item.title }} </v-list-item-title>
       </v-list-item>
       <v-divider class="mr-3" />
-      <v-list-item color="grey" class="my-2">
+      <v-list-item class="my-2">
         About &nbsp; Press &nbsp; Copyright <br />
         Contact us Creator Advertise Developers
         <br />
